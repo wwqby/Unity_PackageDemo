@@ -34,13 +34,6 @@ MonoBehaviour:
     description: "\u9576\u5D4C\u6709\u9ED1\u66DC\u77F3\u7684\u5315\u9996"
     skillDescription: "\u9C9C\u8840\u732E\u796D"
     imagePath: "Image/UI/Weapon/\u6B66\u5668_03.png"
-  - id: 2
-    type: 2
-    star: 3
-    name: "\u9ED1\u66DC\u77F3\u5315\u9996"
-    description: "\u9576\u5D4C\u6709\u9ED1\u66DC\u77F3\u7684\u5315\u9996"
-    skillDescription: "\u9C9C\u8840\u732E\u796D"
-    imagePath: "Image/UI/Weapon/\u6B66\u5668_03.png"
   - id: 3
     type: 3
     star: 3
@@ -49,23 +42,30 @@ MonoBehaviour:
     skillDescription: "\u708E\u7206"
     imagePath: "Image/UI/Weapon/\u6B66\u5668_04.png"
   - id: 4
-    type: 1
-    star: 3
-    name: "\u9ED1\u66DC\u77F3\u5315\u9996"
-    description: "\u9576\u5D4C\u6709\u9ED1\u66DC\u77F3\u7684\u5315\u9996"
-    skillDescription: "\u9C9C\u8840\u732E\u796D"
-    imagePath: "Image/UI/Weapon/\u6B66\u5668_03.png"
-  - id: 2
-    type: 2
-    star: 3
-    name: "\u9ED1\u66DC\u77F3\u5315\u9996"
-    description: "\u9576\u5D4C\u6709\u9ED1\u66DC\u77F3\u7684\u5315\u9996"
-    skillDescription: "\u9C9C\u8840\u732E\u796D"
-    imagePath: "Image/UI/Weapon/\u6B66\u5668_03.png"
-  - id: 2
-    type: 2
-    star: 3
-    name: "\u9ED1\u66DC\u77F3\u5315\u9996"
-    description: "\u9576\u5D4C\u6709\u9ED1\u66DC\u77F3\u7684\u5315\u9996"
-    skillDescription: "\u9C9C\u8840\u732E\u796D"
-    imagePath: "Image/UI/Weapon/\u6B66\u5668_03.png"
+    type: 4
+    star: 4
+    name: "\u7535\u5149\u5251"
+    description: "\u95EA\u70C1\u7740\u7535\u5149\u7684\u957F\u5251"
+    skillDescription: "\u95EA\u7535\u94FE"
+    imagePath: "Image/UI/Weapon/\u6B66\u5668_05.png"
+  - id: 5
+    type: 5
+    star: 4
+    name: "\u5C60\u622E\u4E4B\u5203"
+    description: "\u5200\u5203\u4E0A\u6EF4\u843D\u7740\u9C9C\u8840\uFF0C\u64E6\u4E0D\u6389"
+    skillDescription: "\u71C3\u8840"
+    imagePath: "Image/UI/Weapon/\u6B66\u5668_06.png"
+  - id: 6
+    type: 5
+    star: 5
+    name: "\u9AA8\u5203"
+    description: "\u7528\u5DE8\u5927\u7684\u9AA8\u5934\u4F5C\u4E3A\u5200\u5203\u7684\u957F\u5200"
+    skillDescription: "\u91CE\u86EE\u5486\u54EE"
+    imagePath: "Image/UI/Weapon/\u6B66\u5668_07.png"
+  - id: 7
+    type: 5
+    star: 5
+    name: "\u70C8\u706B\u5200"
+    description: "\u8DF3\u52A8\u7740\u706B\u7130\u7684\u957F\u5200"
+    skillDescription: "\u708E\u7206"
+    imagePath: "Image/UI/Weapon/\u6B66\u5668_037png"

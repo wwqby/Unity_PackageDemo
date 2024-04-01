@@ -39,6 +39,7 @@ public class UIManager
     }
 
 
+
     private UIManager()
     {
         InitDicts();
@@ -47,6 +48,7 @@ public class UIManager
     private void InitDicts()
     {
         pathDicts = new Dictionary<string, string>(){
+
             {UIConst.PackagePanael,"Package/PackagePanel"},
         };
         prefabDicts = new Dictionary<string, GameObject>();

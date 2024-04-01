@@ -69,6 +69,6 @@ public class PackageLocalItem
 
     public override string ToString()
     {
-        return String.Format("[uuid]:{0},[id]:{1},[num]:{2}", uuid, id, num);
+        return String.Format("[uuid]:{0},[id]:{1},[num]:{2},[level]:{}", uuid, id, num);
     }
 }

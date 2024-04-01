@@ -102,7 +102,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 92f46886515c39f468f899f147c781bf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 20f1f0ab1d9e50e40bd5545855f4c8ff, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 8008548219816359781}
   - component: {fileID: 2955737067640738898}
   m_Layer: 5
-  m_Name: Text (Legacy)
+  m_Name: LevelText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,6 +353,7 @@ GameObject:
   - component: {fileID: 8228226197134267196}
   - component: {fileID: 4282223969051953560}
   - component: {fileID: 722449203582098550}
+  - component: {fileID: 2022192918370131141}
   m_Layer: 5
   m_Name: PackageUIItem
   m_TagString: Untagged
@@ -421,6 +422,18 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2022192918370131141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279097235621007766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7088d5478b4941440b99f3ad9bce35c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3426405711881185590
 GameObject:
   m_ObjectHideFlags: 0
@@ -770,7 +783,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4045303626351143392}
   m_Layer: 5
-  m_Name: DeledtSelect
+  m_Name: DeleteSelect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

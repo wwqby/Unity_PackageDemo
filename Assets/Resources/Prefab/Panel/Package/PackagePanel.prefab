@@ -13194,7 +13194,7 @@ GameObject:
   - component: {fileID: 4966791306076850855}
   - component: {fileID: 3672475630263787718}
   m_Layer: 5
-  m_Name: Next
+  m_Name: NextBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -19865,6 +19865,8 @@ GameObject:
   - component: {fileID: 636465376454103330}
   - component: {fileID: 7992748460656776987}
   - component: {fileID: 676892078273324301}
+  - component: {fileID: 3937447434993209831}
+  - component: {fileID: 7377178391194309420}
   m_Layer: 5
   m_Name: PackagePanel
   m_TagString: Untagged
@@ -19955,6 +19957,31 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!225 &3937447434993209831
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195388507915406041}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &7377178391194309420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3195388507915406041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 111ed148189e05243bd62c7c432183b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PackagePanelItemPrefab: {fileID: 3279097235621007766, guid: 5ba4581b1d99f0247b03798d52e9e1ae, type: 3}
 --- !u!1 &3208094445916403506
 GameObject:
   m_ObjectHideFlags: 0
@@ -36861,7 +36888,7 @@ GameObject:
   - component: {fileID: 715230362652586665}
   - component: {fileID: 4333121352293379062}
   m_Layer: 5
-  m_Name: Previous
+  m_Name: PreviousBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37565,7 +37592,7 @@ GameObject:
   - component: {fileID: 1503875197765289699}
   - component: {fileID: 182770683125117906}
   m_Layer: 5
-  m_Name: Scroll View
+  m_Name: ScrollView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39117,7 +39144,7 @@ GameObject:
   - component: {fileID: 8907825905733614393}
   - component: {fileID: 763526516061116576}
   m_Layer: 5
-  m_Name: BackBtn
+  m_Name: CloseBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -23,14 +23,14 @@ public class GMCmd
     {
         //保存数据
         PackageLocalData.getInstance.items = new List<PackageLocalItem>();
-        for (int i = 0; i < 9; i++)
+        for (int i = 0; i < 8; i++)
         {
             PackageLocalItem item = new()
             {
                 uuid = Guid.NewGuid().ToString(),
                 id = i,
                 num = i,
-                level = i,
+                level = (i + 1) % 5,
                 isNew = i % 2 == 1
             };
             PackageLocalData.getInstance.items.Add(item);
@@ -51,7 +51,14 @@ public class GMCmd
     }
 
     [MenuItem("GMCmd/清除背包测试数据")]
-    public static void ClearPackageLocalData(){
+    public static void ClearPackageLocalData()
+    {
         PackageLocalData.getInstance.ClearPackageLocalData();
+    }
+
+    [MenuItem("GMCmd/打开背包界面")]
+    public static void OpenPanel()
+    {
+        UIManager.Instance.OpenPanel(UIConst.PackagePanael);
     }
 }

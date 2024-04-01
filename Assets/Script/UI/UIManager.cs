@@ -29,7 +29,11 @@ public class UIManager
     /// </summary>
     private Transform _uiRoot;
 
+<<<<<<< HEAD
     public static UIManager Instance
+=======
+    public UIManager Instance
+>>>>>>> af57e37d284d72f57dda333b7c112b5bcf15a792
     {
         get
         {
@@ -38,6 +42,27 @@ public class UIManager
         }
     }
 
+<<<<<<< HEAD
+=======
+    public Transform UIRoot
+    {
+        get
+        {
+            if (_uiRoot == null)
+            {
+                if (GameObject.Find("Canas"))
+                {
+                    _uiRoot = GameObject.Find("Canas").transform;
+                }
+                else
+                {
+                    _uiRoot = new GameObject("Canvas").transform;
+                }
+            }
+            return _uiRoot;
+        }
+    }
+>>>>>>> af57e37d284d72f57dda333b7c112b5bcf15a792
 
     private UIManager()
     {
@@ -47,7 +72,11 @@ public class UIManager
     private void InitDicts()
     {
         pathDicts = new Dictionary<string, string>(){
+<<<<<<< HEAD
             {UIConst.PackagePanael,"Package/PackagePanel"},
+=======
+            {UIConst.PackagePanael,"Assets/Resources/Prefab/Panel/Package/PackagePanel.prefab"},
+>>>>>>> af57e37d284d72f57dda333b7c112b5bcf15a792
         };
         prefabDicts = new Dictionary<string, GameObject>();
         panelDicts = new Dictionary<string, BasePanel>();

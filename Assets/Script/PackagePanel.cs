@@ -13,11 +13,7 @@ public class PackagePanel : BasePanel
     private Transform UI_Top_PackageInfo;
     private Transform UI_Top_CloseBtn;
     private Transform UI_Center_ScrollView;
-    private Transform UI_Center_DetailTopText;
-    private Transform UI_Center_DetailStars;
-    private Transform UI_Center_DetailCenterText;
-    private Transform UI_Center_DetailLevelText;
-    private Transform UI_Center_DetailBottomText;
+    private Transform UI_Center_DetailPanel;
     private Transform UI_Center_PreviousBtn;
     private Transform UI_Center_NextBtn;
     private Transform UI_Bottom_DeleteBtn;
@@ -31,6 +27,24 @@ public class PackagePanel : BasePanel
 
     public GameObject PackagePanelItemPrefab;
 
+
+    private string _chooseUuid;
+
+    public string ChooseUuid{
+        get{
+            return _chooseUuid;
+        }
+        set{
+            this._chooseUuid = value;
+            RefreshDetail();
+        }
+    }
+
+    private void RefreshDetail()
+    {
+        PackageLocalItem localItem = GameManager.Instance.GetPackageLocalItemByUuid(ChooseUuid);
+        UI_Center_DetailPanel.GetComponent<PackageDetail>().Refresh(localItem,this);
+    }
 
     override protected void Awake()
     {
@@ -75,11 +89,7 @@ public class PackagePanel : BasePanel
         UI_Top_CloseBtn = panel.Find("Top/CloseBtn");
         UI_Top_PackageInfo = panel.Find("Top/BackBtn/Info");
         UI_Center_ScrollView = panel.Find("Center/ScrollView");
-        UI_Center_DetailTopText = panel.Find("Center/Detailpanel/Top/Text");
-        UI_Center_DetailStars = panel.Find("Center/Detailpanel/Center/star");
-        UI_Center_DetailCenterText = panel.Find("Center/Detailpanel/Center/Text");
-        UI_Center_DetailLevelText = panel.Find("Center/Detailpanel/Bottom/Level/Text");
-        UI_Center_DetailBottomText = panel.Find("Center/Detailpanel/Bottom/Text");
+        UI_Center_DetailPanel = panel.Find("Center/DetailPanel");
         UI_Center_PreviousBtn = panel.Find("Center/PreviousBtn");
         UI_Center_NextBtn = panel.Find("Center/NextBtn");
         UI_Bottom_DeleteBtn = panel.Find("Bottom/BottomMenus/DeleteBtn");

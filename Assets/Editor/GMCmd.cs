@@ -11,7 +11,7 @@ public class GMCmd
     public static void readPackageTable()
     {
         PackageTable packageTable = Resources.Load<PackageTable>("TableData/PackageTable");
-        foreach (PacakageTableItem item in packageTable.dataList)
+        foreach (PackageTableItem item in packageTable.dataList)
         {
             Debug.Log(string.Format("[id]:{0},[name]:{1}", item.id, item.name));
         }
@@ -59,6 +59,6 @@ public class GMCmd
     [MenuItem("GMCmd/打开背包界面")]
     public static void OpenPanel()
     {
-        UIManager.Instance.OpenPanel(UIConst.PackagePanael);
+        UIManager.Instance.OpenPanel(UIConst.PackagePanel);
     }
 }

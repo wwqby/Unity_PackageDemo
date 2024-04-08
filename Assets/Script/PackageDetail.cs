@@ -15,7 +15,7 @@ public class PackageDetail : MonoBehaviour
     private Transform UI_Bottom_TextLevel;
 
     private PackageLocalItem packageLocalItem;
-    private PacakageTableItem pacakageTableItem;
+    private PackageTableItem pacakageTableItem;
     private PackagePanel uiParent;
 
 

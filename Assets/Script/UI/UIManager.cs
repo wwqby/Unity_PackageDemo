@@ -49,7 +49,9 @@ public class UIManager
     {
         pathDicts = new Dictionary<string, string>(){
 
-            {UIConst.PackagePanael,"Package/PackagePanel"},
+            {UIConst.PackagePanel,"Package/PackagePanel"},
+            {UIConst.LotteryPanel,"Lottery/LotteryPanel"},
+            {UIConst.MainPanel,"MainPanel"},
         };
         prefabDicts = new Dictionary<string, GameObject>();
         panelDicts = new Dictionary<string, BasePanel>();
@@ -123,6 +125,10 @@ public class UIManager
 public class UIConst
 {
     //背包界面
-    public const string PackagePanael = "PackagePanel";
+    public const string PackagePanel = "PackagePanel";
+    //抽卡界面
+    public const string LotteryPanel = "LotteryPanel";
+    //主界面
+    public const string MainPanel = "MainPanel";
 
 }

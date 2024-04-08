@@ -18,7 +18,7 @@ public class PackageCell : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
     private Transform UI_SelectAnimation;
     private Transform UI_MouseOverAnimation;
 
-    private PacakageTableItem tableItem;
+    private PackageTableItem tableItem;
     private PackageLocalItem localItem;
     private PackagePanel UI_parent;
 
@@ -74,9 +74,23 @@ public class PackageCell : MonoBehaviour, IPointerClickHandler, IPointerEnterHan
         }
     }
 
+    /// <summary>
+    /// 刷新当前删除的选中状态
+    /// </summary>
+    public void RefreshDeleteState(){
+        bool result = UI_parent.DeleteChoosenUuids.Contains(this.localItem.uuid);
+        UI_DeleteSelect.gameObject.SetActive(result);
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         Debug.Log("OnPointerClick:" + eventData.ToString());
+        if (UI_parent.curMode == PackageMode.DELETE)
+        {
+            UI_parent.AddChooseDeleteUuid( this.localItem.uuid);
+            UI_parent.RefreshDeletePanel();
+            return;
+        }
         if (UI_parent.ChooseUuid == this.localItem.uuid)
         {
             return;

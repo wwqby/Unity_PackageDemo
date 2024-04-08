@@ -5,11 +5,11 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="wwq/背包数据",fileName ="PackageTable")]
 public class PackageTable : ScriptableObject
 {
-    public List<PacakageTableItem> dataList = new List<PacakageTableItem>();
+    public List<PackageTableItem> dataList = new List<PackageTableItem>();
 }
 
 [System.Serializable]
-public class PacakageTableItem{
+public class PackageTableItem{
     public int id;
     public int type;
     public int star;
